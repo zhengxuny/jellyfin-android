@@ -3,8 +3,9 @@ name: App / Build
 on:
   push:
     branches:
-      - master
+      - exoplayer-trickplay-support  # <-- 修改1：改成目标分支名
   pull_request:
+  workflow_dispatch:                 # <-- 修改2：增加这一行，允许手动触发
 
 permissions:
   contents: read
